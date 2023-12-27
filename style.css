@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+
+    --fontfamily:'Red Hat Display';
+    --font500: 500;
+    --font700: 700;
+    --font900: 900;
+}
+
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--paleBlue);
+    font-family: var(--fontfamily);
+    overflow: hidden;
+}
+
+@media (min-width:375) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+.text-header {
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 28px;
+    margin: 1rem 0;
+}
+
+.text-content {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--desaturatedBlue);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    height: 170px;
+}
+
+
+.header img {
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.con-wrap {
+    width: 400px;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    
+}
+
+.body-con {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.music-wrap {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    border: 1px solid var(--veryPaleBlue);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--veryPaleBlue);
+    margin: 2rem 0;
+}
+
+
+.col-1 {
+    flex-grow: 1;
+}
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.col-3 {
+    flex-grow: 1;
+    text-align: end;
+    font-weight: var(--font700);
+    color: var(--brightBlue);
+}
+
+.col-3 a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.name {
+    font-weight: 700;
+}
+.price {
+    color: var(--desaturatedBlue);
+}
+
+
+
+.btn-proceed {
+    display: block;
+    background-color: var(--brightBlue);
+    padding: 16px;
+    width: 100%;
+    color: #fff;
+    border: var(--brightBlue) 1px solid;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 10px 8px var(--paleBlue);
+}
+
+.btn-cancle {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fff;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: var(--desaturatedBlue);
+}
+
+.btn-proceed:hover{
+    opacity: 0.8;
+}
